@@ -1,6 +1,6 @@
 ## Description
 
-PHP 的redis代理连接池，兼容现有PHP的redis.so扩展。主要解决nginx+php-fpm架构下，面对高并发下redis连接数不够用，redis性能无法彻底发挥的问题。
+phedis是使用golang开发的PHP的redis代理连接池，兼容现有PHP的redis.so扩展。主要解决nginx+php-fpm架构下，面对高并发时redis连接数不够用，redis性能无法彻底释放的问题。
 
 ## Installation
 
