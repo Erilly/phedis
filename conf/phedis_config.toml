@@ -1,0 +1,5 @@
+listen=":8383"
+phredis_proxy_key = "#phedisProxy_options#"
+timeout = 500000000
+min_proxy_pool_length = 10
+max_proxy_pool_length = 20
