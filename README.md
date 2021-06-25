@@ -33,7 +33,7 @@ $redis->connect('127.0.0.1',8383);
   格式： host:port,password,database，如：127.0.0.1:6379,732de51677407fa6,3
   如果redis无密码，如：127.0.0.1:6379,,3
 */
-$bool = $redis->set('#phedisProxy_options#','127.0.0.1:6379,732de51677407fa6,11');
+$bool = $redis->set('#phedisProxy_options#','127.0.0.1:6379,732de51677407fa6,3');
 
 if ($bool){
   $redis->set();
