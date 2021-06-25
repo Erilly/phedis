@@ -10,7 +10,7 @@ phedis是使用golang开发的PHP的redis代理连接池，兼容现有PHP的red
 `vim phedis/conf/phedis_config.toml`
 
 ``` toml
-listen=":8383"  #服务监听端口
+listen=":8383"                                  #服务监听端口
 phredis_proxy_key = "#phedisProxy_options#"     #PHP端要连接的真实redis配置key
 timeout = 500000000                             #连接redis的超时时间5s
 min_proxy_pool_length = 10                      #初始化池中连接个数
