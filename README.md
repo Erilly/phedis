@@ -1,6 +1,6 @@
 ## Description
 
-PHP 的redis 代理连接池
+PHP 的redis代理连接池，兼容现有PHP的redis.so扩展。主要解决nginx+php-fpm架构下，面对高并发下redis连接数不够用，redis性能无法彻底发挥的问题。
 
 ## Installation
 
@@ -29,8 +29,9 @@ $redis = new \Redis();
 $redis->connect('127.0.0.1',8383);
  
 /*
-  通过phedis中指定的phredis_proxy_key，来设置需代理连接的真实redis配置。
+  通过phedis/conf/phedis_config.toml约定配置的phredis_proxy_key，来设置需代理连接的真实redis配置。
   格式： host:port,password,database，如：127.0.0.1:6379,732de51677407fa6,3
+  如果redis无密码，如：127.0.0.1:6379,,3
 */
 $bool = $redis->set('#phedisProxy_options#','127.0.0.1:6379,732de51677407fa6,11');
 
